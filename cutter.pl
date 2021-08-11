@@ -30,6 +30,7 @@ sub main {
 	my %hash_to_file = ();
 
 	while (my $filepath = <$options{dir}/*.mp4>) {
+		next if -e "$options{dir}/.intro_endtime";
 		my $file = $filepath;
 		$file =~ s#.*/##g;
 		
