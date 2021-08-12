@@ -4,7 +4,6 @@ use strict;
 use warnings;
 use Data::Dumper;
 use autodie;
-use Time::Seconds;
 
 use Digest::MD5::File qw(dir_md5_hex file_md5_hex url_md5_hex);
 
